@@ -5,6 +5,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { HiraganaPage } from '../pages/hiragana/hiragana';
+import { KatakanaPage } from '../pages/katakana/katakana';
+import { VocabulariosPage } from '../pages/vocabularios/vocabularios';
+import { JpltN5Page } from '../pages/jplt-n5/jplt-n5';
 
 @Component({
   templateUrl: 'app.html'
@@ -20,9 +24,12 @@ export class MyApp {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
-    this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+    this.pages = [              	
+      { title: 'Inicio', component: HomePage },
+      { title: 'Hiragana', component: HiraganaPage },
+      { title: 'Katakana', component: KatakanaPage },
+      { title: 'Vocabulario', component: VocabulariosPage },
+      { title: 'JPLT - N5', component: JpltN5Page }
     ];
 
   }

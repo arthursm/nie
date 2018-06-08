@@ -5,16 +5,23 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { HiraganaPage } from '../pages/hiragana/hiragana';
+import { KatakanaPage } from '../pages/katakana/katakana';
+import { VocabulariosPage } from '../pages/vocabularios/vocabularios';
+import { JpltN5Page } from '../pages/jplt-n5/jplt-n5';
 
 import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { NativeAudio } from '@ionic-native/native-audio';
+import { SplashScreen } from '@ionic-native/splash-screen'; 
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    HiraganaPage,
+    KatakanaPage,
+    VocabulariosPage,
+    JpltN5Page
   ],
   imports: [
     BrowserModule,
@@ -24,12 +31,15 @@ import { NativeAudio } from '@ionic-native/native-audio';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    HiraganaPage,
+    KatakanaPage,
+    VocabulariosPage,
+    JpltN5Page
   ],
   providers: [
     StatusBar,
-    SplashScreen,
-    NativeAudio,
+    SplashScreen, 
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

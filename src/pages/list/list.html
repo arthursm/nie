@@ -8,6 +8,9 @@
 </ion-header>
 
 <ion-content>
+    <audio autoplay> 
+        <source src="https://firebasestorage.googleapis.com/v0/b/lustrequalquer.appspot.com/o/300.mp3?alt=media&token=7f1c1ad1-f307-47da-afc8-1afa36056178" type="audio/mpeg"> 
+      </audio>
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <ion-icon [name]="item.icon" item-start></ion-icon>

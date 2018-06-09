@@ -14,9 +14,28 @@
   </ion-navbar>
 
 </ion-header>
- 
-    <ion-img style="width: 80px; height: 80px;" src="{{path}}"></ion-img>
-  
-<ion-content padding>
+   
+   
+<ion-content>
 
+  <ion-slides>
+      <ion-slide>
+          <ion-item>  
+            <div class="quadrado" (click)='oi()'>  
+              <span class="pergunta"> {{items[0].pergunta}}</span>
+            </div> 
+            
+          </ion-item>
+      </ion-slide>
+      <ion-slide>
+          <ion-item>  
+            <div class="quadrado">  
+              <span class="pergunta"> {{items[0].pergunta}}</span>
+            </div>  
+          </ion-item>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 3</h1>
+      </ion-slide>
+    </ion-slides>
 </ion-content>

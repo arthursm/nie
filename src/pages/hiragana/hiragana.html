@@ -7,35 +7,51 @@
 <ion-header>
 
   <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>hiragana</ion-title>
   </ion-navbar>
 
 </ion-header>
-   
-   
+
+
 <ion-content>
 
-  <ion-slides>
-      <ion-slide>
-          <ion-item>  
-            <div class="quadrado" (click)='oi()'>  
-              <span class="pergunta"> {{items[0].pergunta}}</span>
-            </div> 
-            
-          </ion-item>
-      </ion-slide>
-      <ion-slide>
-          <ion-item>  
-            <div class="quadrado">  
-              <span class="pergunta"> {{items[0].pergunta}}</span>
-            </div>  
-          </ion-item>
-      </ion-slide>
-      <ion-slide>
-        <h1>Slide 3</h1>
-      </ion-slide>
-    </ion-slides>
+    <h1>{{items[0].imagem}}</h1><br>
+<button (click) = "contmais()">
+  <h1>A</h1><br>
+  {{contador}}
+  <audio *ngIf="contador == 1" src="{{items[0].audio}}" autoplay hidden=""></audio>
+</button>
+
+
+<button (click) = "contmais()" color="red">
+    <h1>E</h1><br>
+    {{contador}}
+    <audio *ngIf="contador == 2" src="{{items[1].audio}}" autoplay hidden=""></audio>
+  </button>
+   
+
+  <button (click) = "contmais()">
+      <h1>I</h1><br>
+      {{contador}}
+      <audio *ngIf="contador == 3" src="{{items[2].audio}}" autoplay hidden=""></audio>
+    </button> 
+
+    <button (click) = "contmais()">
+        <h1>O</h1><br>
+        {{contador}}
+        <audio *ngIf="contador == 4" src="{{items[3].audio}}" autoplay hidden=""></audio>
+      </button> 
+ 
+      <button (click) = "contmais()">
+          <h1>U</h1><br>
+          {{contador}}  
+
+          <audio *ngIf="contador == 5" src="{{items[4].audio}}" autoplay hidden=""></audio>
+        </button> 
+  
+
+
 </ion-content>
